@@ -1,2 +1,8 @@
 github.com/CaiJimmy/hugo-theme-stack v2.6.0+incompatible h1:HOf88geWucQwmTmNCFgHNidVTXjv9jLz3UA72gyFQTE=
 github.com/CaiJimmy/hugo-theme-stack v2.6.0+incompatible/go.mod h1:Tacngkxf7u2kfufDzxoX7yqktykqc/Vi1LwJOHGE6Nw=
+github.com/EmielH/tale-hugo v2.2.0+incompatible h1:5wc78AMnQPgvGgmAaW0k2AG/I1NF6aTcqZohBpp+Euk=
+github.com/EmielH/tale-hugo v2.2.0+incompatible/go.mod h1:+VHzArVg5AJ0GDhLtO1Qhls85iCHbkLv7So2hXEo3wI=
+github.com/dashdashzako/paperback v0.0.0-20210402085202-17a1f57512f3 h1:FM9j1/DttwzH3h3SYT5nMIQ3V/f8tF4zM8CBytVpiPo=
+github.com/dashdashzako/paperback v0.0.0-20210402085202-17a1f57512f3/go.mod h1:+EQyjqJ0kt/Z9HX3kUwfFqvPAB9n3mkuCtnTHEHG1nc=
+github.com/queensferryme/hugo-theme-texify v0.0.0-20220506124212-da434c0e1e31 h1:r1S766uvDWP7qw3d4z23u2jXQZBM74PtNjM/+7yIOYc=
+github.com/queensferryme/hugo-theme-texify v0.0.0-20220506124212-da434c0e1e31/go.mod h1:n2KensxBMkG6nwIEjVzStjj+6NoroEb9r0TYMR/FMZo=

@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'diary'
 [module]
   [[module.imports]]
-    path = "github.com/CaiJimmy/hugo-theme-stack"
+     path = "github.com/EmielH/tale-hugo"
 [markup.goldmark.renderer]
   unsafe = true
 
