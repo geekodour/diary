@@ -1,6 +1,6 @@
 baseURL = 'https://diary.geekodour.org/'
 languageCode = 'en-us'
-title = 'diary'
+title = 'diary 🐤'
 [module]
   [[module.imports]]
      path = "github.com/EmielH/tale-hugo"
