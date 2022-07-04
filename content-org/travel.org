@@ -1,0 +1,17 @@
+#+hugo_base_dir: ../
+#+HUGO_SECTION: travel
+
+* home
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index.md
+:EXPORT_HUGO_SECTION: /
+:END:
+what the fuck
+* Travel Post Ideas
+:PROPERTIES:
+:EXPORT_FILE_NAME: travel_post_ideas
+:END:
+Some ideas that I like:
+- [[https://github.com/katmeister/tokyo-2019][GitHub - katmeister/tokyo-2019: Everything I ate and coffee I drank during my...]]
+- [[https://github.com/traumverloren/camping-in-iceland][GitHub - traumverloren/camping-in-iceland: My guide to camping solo in Icelan...]]
+- [[https://github.com/luisandani/valencia-notes][GitHub - luisandani/valencia-notes: Things to do in Valencia, Restaurants and...]]

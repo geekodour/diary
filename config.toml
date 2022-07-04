@@ -6,5 +6,18 @@ title = 'diary 🐤'
      path = "github.com/EmielH/tale-hugo"
 [markup.goldmark.renderer]
   unsafe = true
-
-
+[menu]
+  [[menu.main]]
+    identifier = "travel"
+    name = "Travel"
+    title = "Travel"
+    url = "/travel/"
+    weight = 0
+  [[menu.main]]
+    identifier = "journal"
+    name = "Journal"
+    title = "Journal"
+    url = "/journal/"
+    weight = 0
+[Params]
+css = ["custom.css"]
