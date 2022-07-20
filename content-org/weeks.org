@@ -237,6 +237,14 @@ I don't remember what happened.
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 852 :cal_date 12 Dec'12
 :END:
 I remember this day very clearly because of the date.
+* First computer
+:PROPERTIES:
+:DATE: [2005-10-25]
+:WEEK:     480
+:EXPORT_FILE_NAME: 480
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 480 :cal_date 25 Oct'05
+:END:
+Dad bought us our first computer in the house. Baba dada helped us set it up. My mind was blown. It was a compaq.
 * First heartbreak 💔
 :PROPERTIES:
 :DATE: [2014-12-12]
@@ -253,6 +261,13 @@ This took me precisely 9 months to recover from. One morning I woke up and I rea
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 343 :cal_date 15 Mar'03
 :END:
 Started School at KVIOC
+* First interaction with Programming
+:PROPERTIES:
+:DATE: [2011-03-23]
+:WEEK:     762
+:EXPORT_FILE_NAME: 762
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 762 :cal_date 23 Mar'11
+:END:
 * Lockdown
 :PROPERTIES:
 :DATE: [2020-03-25]
