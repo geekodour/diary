@@ -1,0 +1,387 @@
+#+hugo_base_dir: ../
+#+hugo_section: weeks
+
+#+begin_src elisp :results none
+                                        ; if there are two entries which belong to the same week, that conflict needs manual check.
+                                        ; writing my bithdays in this document was the most spritual moment i ever had. i am crying rn. idk what is but i feel more whole than usual.
+(defun get-week-no(d)
+  (let* ((days (- (calendar-absolute-from-gregorian '(8 14 1996))
+                  (calendar-absolute-from-gregorian d)))
+         (days (1+ (if (> days 0) days (- days)))))
+    (/ days 7)))
+
+(defun get-formatted-date(d)
+  (format-time-string "%e %b'%y" (org-time-string-to-time d))
+  )
+
+(defun add-week(el)
+  (org-set-property "WEEK" (number-to-string (get-week-no (org-date-to-gregorian (org-element-property :DATE el)))))
+  (org-set-property "EXPORT_FILE_NAME" (number-to-string (get-week-no (org-date-to-gregorian (org-element-property :DATE el)))))
+  )
+(defun add-custom-frontmatter(el)
+  (org-set-property
+   "EXPORT_HUGO_CUSTOM_FRONT_MATTER"
+   (format ":week %s :cal_date %s" (org-element-property :WEEK el) (get-formatted-date (org-element-property :DATE el)))
+   )
+  )
+
+(defun populate-props ()
+  (let ((el (org-element-at-point)))
+    (add-week el) ; set week number
+    ;; (add-emoji el) ; add emoji
+    (add-custom-frontmatter el) ; set custom front matter, need to run twice for new properties
+    ))
+(org-map-entries #'populate-props "LEVEL=1")
+#+end_src
+
+
+* '96 🍼
+:PROPERTIES:
+:DATE: [1996-08-14]
+:WEEK:     0
+:EXPORT_FILE_NAME: 0
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 0 :cal_date 14 Aug'96
+:END:
+I have no pictures from the day I was born. Does that mean I was even born?
+
+* 1st Birthday
+:PROPERTIES:
+:DATE: [1997-08-14]
+:WEEK:     52
+:EXPORT_FILE_NAME: 52
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 52 :cal_date 14 Aug'97
+:END:
+There's a possibility that I got exchanged with some other kid
+
+* 2nd Birthday
+:PROPERTIES:
+:DATE: [1998-08-14]
+:WEEK:     104
+:EXPORT_FILE_NAME: 104
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 104 :cal_date 14 Aug'98
+:END:
+* 3rd Birthday
+:PROPERTIES:
+:DATE: [1999-08-14]
+:WEEK:     156
+:EXPORT_FILE_NAME: 156
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 156 :cal_date 14 Aug'99
+:END:
+* 4th Birthday
+:PROPERTIES:
+:DATE: [2000-08-14]
+:WEEK:     208
+:EXPORT_FILE_NAME: 208
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 208 :cal_date 14 Aug'00
+:END:
+* 5th Birthday
+:PROPERTIES:
+:DATE: [2001-08-14]
+:WEEK:     261
+:EXPORT_FILE_NAME: 261
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 261 :cal_date 14 Aug'01
+:END:
+* 6th Birthday
+:PROPERTIES:
+:DATE: [2002-08-14]
+:WEEK:     313
+:EXPORT_FILE_NAME: 313
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 313 :cal_date 14 Aug'02
+:END:
+* 7th Birthday
+:PROPERTIES:
+:DATE: [2003-08-14]
+:WEEK:     365
+:EXPORT_FILE_NAME: 365
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 365 :cal_date 14 Aug'03
+:END:
+* 8th Birthday
+:PROPERTIES:
+:DATE: [2004-08-14]
+:WEEK:     417
+:EXPORT_FILE_NAME: 417
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 417 :cal_date 14 Aug'04
+:END:
+* 9th Birthday
+:PROPERTIES:
+:DATE: [2005-08-14]
+:WEEK:     469
+:EXPORT_FILE_NAME: 469
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 469 :cal_date 14 Aug'05
+:END:
+* 10th Birthday
+:PROPERTIES:
+:DATE: [2006-08-14]
+:WEEK:     521
+:EXPORT_FILE_NAME: 521
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 521 :cal_date 14 Aug'06
+:END:
+* 11th Birthday
+:PROPERTIES:
+:DATE: [2007-08-14]
+:WEEK:     574
+:EXPORT_FILE_NAME: 574
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 574 :cal_date 14 Aug'07
+:END:
+* 12th Birthday
+:PROPERTIES:
+:DATE: [2008-08-14]
+:WEEK:     626
+:EXPORT_FILE_NAME: 626
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 626 :cal_date 14 Aug'08
+:END:
+* 13th Birthday
+:PROPERTIES:
+:DATE: [2009-08-14]
+:WEEK:     678
+:EXPORT_FILE_NAME: 678
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 678 :cal_date 14 Aug'09
+:END:
+* 14th Birthday
+:PROPERTIES:
+:DATE: [2010-08-14]
+:WEEK:     730
+:EXPORT_FILE_NAME: 730
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 730 :cal_date 14 Aug'10
+:END:
+* 15th Birthday
+:PROPERTIES:
+:DATE: [2011-08-14]
+:WEEK:     782
+:EXPORT_FILE_NAME: 782
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 782 :cal_date 14 Aug'11
+:END:
+* 16th Birthday
+:PROPERTIES:
+:DATE: [2012-08-14]
+:WEEK:     835
+:EXPORT_FILE_NAME: 835
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 835 :cal_date 14 Aug'12
+:END:
+* 17th Birthday
+:PROPERTIES:
+:DATE: [2013-08-14]
+:WEEK:     887
+:EXPORT_FILE_NAME: 887
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 887 :cal_date 14 Aug'13
+:END:
+* 18th Birthday
+:PROPERTIES:
+:DATE: [2014-08-14]
+:WEEK:     939
+:EXPORT_FILE_NAME: 939
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 939 :cal_date 14 Aug'14
+:END:
+I don't remember what happened.
+* 19th Birthday
+:PROPERTIES:
+:DATE: [2015-08-14]
+:WEEK:     991
+:EXPORT_FILE_NAME: 991
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 991 :cal_date 14 Aug'15
+:END:
+* 20th Birthday
+:PROPERTIES:
+:DATE: [2016-08-14]
+:WEEK:     1043
+:EXPORT_FILE_NAME: 1043
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1043 :cal_date 14 Aug'16
+:END:
+* 21st Birthday
+:PROPERTIES:
+:DATE: [2017-08-14]
+:WEEK:     1095
+:EXPORT_FILE_NAME: 1095
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1095 :cal_date 14 Aug'17
+:END:
+* 22nd Birthday
+:PROPERTIES:
+:DATE: [2018-08-14]
+:WEEK:     1148
+:EXPORT_FILE_NAME: 1148
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1148 :cal_date 14 Aug'18
+:END:
+* 23rd Birthday
+:PROPERTIES:
+:DATE: [2019-08-14]
+:WEEK:     1200
+:EXPORT_FILE_NAME: 1200
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1200 :cal_date 14 Aug'19
+:END:
+* 24th Birthday
+:PROPERTIES:
+:DATE: [2020-08-14]
+:WEEK:     1252
+:EXPORT_FILE_NAME: 1252
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1252 :cal_date 14 Aug'20
+:END:
+* 25th Birthday
+:PROPERTIES:
+:DATE: [2021-08-14]
+:WEEK:     1304
+:EXPORT_FILE_NAME: 1304
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1304 :cal_date 14 Aug'21
+:END:
+* 26th Birthday
+:PROPERTIES:
+:DATE: [2022-08-14]
+:WEEK:     1356
+:EXPORT_FILE_NAME: 1356
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1356 :cal_date 14 Aug'22
+:END:
+* First love 💘
+:PROPERTIES:
+:DATE: [2012-12-12]
+:WEEK:     852
+:EXPORT_FILE_NAME: 852
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 852 :cal_date 12 Dec'12
+:END:
+I remember this day very clearly because of the date.
+* First heartbreak 💔
+:PROPERTIES:
+:DATE: [2014-12-12]
+:WEEK:     956
+:EXPORT_FILE_NAME: 956
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 956 :cal_date 12 Dec'14
+:END:
+This took me precisely 9 months to recover from. One morning I woke up and I realized that I've finally moved on.
+* Started school
+:PROPERTIES:
+:DATE: [2003-03-15]
+:WEEK:     343
+:EXPORT_FILE_NAME: 343
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 343 :cal_date 15 Mar'03
+:END:
+Started School at KVIOC
+* Lockdown
+:PROPERTIES:
+:DATE: [2020-03-25]
+:WEEK:     1232
+:EXPORT_FILE_NAME: 1232
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1232 :cal_date 25 Mar'20
+:END:
+* Move to BLR
+:PROPERTIES:
+:DATE: [2021-02-01]
+:WEEK:     1276
+:EXPORT_FILE_NAME: 1276
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1276 :cal_date  1 Feb'21
+:END:
+* Move to GHY
+:PROPERTIES:
+:DATE: [2021-09-01]
+:WEEK:     1307
+:EXPORT_FILE_NAME: 1307
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1307 :cal_date  1 Sep'21
+:END:
+* Completed School
+:PROPERTIES:
+:DATE: [2015-05-15]
+:WEEK:     978
+:EXPORT_FILE_NAME: 978
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 978 :cal_date 15 May'15
+:END:
+* Joined College
+:PROPERTIES:
+:DATE: [2015-08-01]
+:WEEK:     989
+:EXPORT_FILE_NAME: 989
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 989 :cal_date  1 Aug'15
+:END:
+Worst fucking era of my life.
+* Renovated Room
+:PROPERTIES:
+:DATE: [2022-02-01]
+:WEEK:     1329
+:EXPORT_FILE_NAME: 1329
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1329 :cal_date  1 Feb'22
+:END:
+* Second Heartbreak 💔
+:PROPERTIES:
+:DATE: [2021-12-08]
+:WEEK:     1321
+:EXPORT_FILE_NAME: 1321
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1321 :cal_date  8 Dec'21
+:END:
+Bestest person. We resolved it few months down the line. It's peaceful now.
+* First music festival
+:PROPERTIES:
+:DATE: [2016-10-20]
+:WEEK:     1053
+:EXPORT_FILE_NAME: 1053
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1053 :cal_date 20 Oct'16
+:END:
+* InOut 5.0
+:PROPERTIES:
+:DATE: [2018-10-13]
+:WEEK:     1156
+:EXPORT_FILE_NAME: 1156
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1156 :cal_date 13 Oct'18
+:END:
+* First Goa trip
+:PROPERTIES:
+:DATE: [2017-01-07]
+:WEEK:     1064
+:EXPORT_FILE_NAME: 1064
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1064 :cal_date  7 Jan'17
+:END:
+* first iPhone 🍎
+:PROPERTIES:
+:DATE: [2018-05-12]
+:WEEK:     1134
+:EXPORT_FILE_NAME: 1134
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1134 :cal_date 12 May'18
+:END:
+* Second ever flight
+:PROPERTIES:
+:DATE: [2016-09-01]
+:WEEK:     1046
+:EXPORT_FILE_NAME: 1046
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1046 :cal_date  1 Sep'16
+:END:
+Went to Bangalore for the first time. The last time I was out of the northeast was when I was in class 3.
+* deep reflections
+:PROPERTIES:
+:DATE: [2022-07-21]
+:WEEK:     1353
+:EXPORT_FILE_NAME: 1353
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1353 :cal_date 21 Jul'22
+:END:
+As I write this weekly notes today, I am looking through my whole life. I am having practical realizations that I never had before.
+* First international flight 🇩🇪
+:PROPERTIES:
+:DATE: [2019-11-06]
+:WEEK:     1212
+:EXPORT_FILE_NAME: 1212
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1212 :cal_date  6 Nov'19
+:END:
+* Joined Clarisights
+:PROPERTIES:
+:DATE: [2020-06-12]
+:WEEK:     1243
+:EXPORT_FILE_NAME: 1243
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1243 :cal_date 12 Jun'20
+:END:
+* Dad 🌻
+:PROPERTIES:
+:DATE: [2019-07-22]
+:WEEK:     1196
+:EXPORT_FILE_NAME: 1196
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1196 :cal_date 22 Jul'19
+:END:
+* Quit Clarisights
+:PROPERTIES:
+:DATE: [2022-03-12]
+:WEEK:     1334
+:EXPORT_FILE_NAME: 1334
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1334 :cal_date 12 Mar'22
+:END:
+Quit my job.
+* Choco 🐶
+:PROPERTIES:
+:DATE: [2022-02-23]
+:WEEK:     1332
+:EXPORT_FILE_NAME: 1332
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1332 :cal_date 23 Feb'22
+:END:
+Adopted my first dog. Choco aka nft aka bandor.

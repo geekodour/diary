@@ -19,3 +19,5 @@ title = 'diary 🐤'
     title = "Journal"
     url = "/journal/"
     weight = 0
+[Params]
+  custom_css = ["css/custom.css"]

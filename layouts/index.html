@@ -1,5 +1,36 @@
 {{ define "main" }}
 	<article class="post">
 		<div class="post-content">{{ .Content | safeHTML }}</div>
+		<h1>First 10 years</h1>
+		{{range $val := (seq 0 520)  }}
+			{{ partial "week_entry.html" (dict "ctx" $ "week_no" $val) }}
+		{{end}}
+		<h1>Teenage years</h1>
+		{{range $val := (seq 521 1041)  }}
+			{{ partial "week_entry.html" (dict "ctx" $ "week_no" $val) }}
+		{{end}}
+		<h1>20s</h1>
+		{{range $val := (seq 1042 1561)  }}
+			{{ partial "week_entry.html" (dict "ctx" $ "week_no" $val) }}
+		{{end}}
+		<!-- <h1>Teenage years</h1> -->
+		<!-- {{range $val := (seq 520)  }} [] {{end}} -->
+		<!-- <h1>20s</h1> -->
+		<!-- {{range $val := (seq 520)  }} [] {{end}} -->
+		<!-- <h1>30s</h1> -->
+		<!-- {{range $val := (seq 520)  }} [] {{end}} -->
+		<!-- <h1>40s</h1> -->
+		<!-- {{range $val := (seq 520)  }} [] {{end}} -->
+		<!-- <h1>50s</h1> -->
+		<!-- {{range $val := (seq 520)  }} [] {{end}} -->
+		<!-- <h1>60s</h1> -->
+		<!-- {{range $val := (seq 520)  }} [] {{end}} -->
+		<!-- <h1>70s</h1> -->
+		<!-- {{range $val := (seq 520)  }} [] {{end}} -->
+		<!-- <h1>80s</h1> -->
+		<!-- {{range $val := (seq 520)  }} [] {{end}} -->
+		<!-- <h1>90s</h1> -->
+		<!-- {{range $val := (seq 520)  }} [] {{end}} -->
+
 	</article>
 {{ end }}
