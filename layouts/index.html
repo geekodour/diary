@@ -1,8 +1,5 @@
 {{ define "main" }}
-
-<main>
-	{{ partial "index/introduction.html" . }}
-  {{ .Content }}
-</main>
-
+	<article class="post">
+		<div class="post-content">{{ .Content | safeHTML }}</div>
+	</article>
 {{ end }}
