@@ -18,6 +18,12 @@ title = 'diary 🐤'
     name = "Journal"
     title = "Journal"
     url = "/journal/"
+    weight = 1
+  [[menu.main]]
+    identifier = "homepage"
+    name = "🏃"
+    title = "🏃"
+    url = "https://geekodour.org"
     weight = 0
 [Params]
   custom_css = ["css/custom.css"]
