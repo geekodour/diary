@@ -1,0 +1,10 @@
+{{ define "main" }}
+	{{ range .Paginator.Pages }}
+		<article class="post">
+			<h1 class="listing-item"><a href="{{ .Permalink }}">{{ .Title }}</a> {{ if .Draft }}(Draft){{ end }}</h1>
+		</article>
+	{{ end }}
+
+	{{ partial "pagination.html" . }}
+{{ end }}
+

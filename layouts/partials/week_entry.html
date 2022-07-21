@@ -1,10 +1,10 @@
 {{ $week_post_path := print "weeks/" .week_no ".md"  }}
 
 {{ if os.FileExists $week_post_path }}
- <span title={{ .week_no }}>
+ <span title={{ .week_no }} class="cal-entry">
  {{ with .ctx.Site.GetPage $week_post_path }}
  {{ $moi_title := print .Params.week " | " .Params.cal_date  }}
- <a href={{ .RelPermalink  }} class="cal-entry" title={{ $moi_title  }}>{{ .Title | lower }}</a>
+ <a href={{ .RelPermalink  }} title={{ $moi_title  }}>{{ .Title | lower }}</a>
  {{ end }}
   </span>
 {{ else }}
