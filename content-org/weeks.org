@@ -229,7 +229,7 @@ I don't remember what happened.
 :EXPORT_FILE_NAME: 1356
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1356 :cal_date 14 Aug'22
 :END:
-* First love 💘
+* First love
 :PROPERTIES:
 :DATE: [2012-12-12]
 :WEEK:     852
@@ -245,7 +245,7 @@ I remember this day very clearly because of the date.
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 480 :cal_date 25 Oct'05
 :END:
 Dad bought us our first computer in the house. Baba dada helped us set it up. My mind was blown. It was a compaq.
-* First heartbreak 💔
+* First heartbreak
 :PROPERTIES:
 :DATE: [2014-12-12]
 :WEEK:     956
@@ -311,7 +311,7 @@ Worst fucking era of my life.
 :EXPORT_FILE_NAME: 1329
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1329 :cal_date  1 Feb'22
 :END:
-* Second Heartbreak 💔
+* Second Heartbreak
 :PROPERTIES:
 :DATE: [2021-12-08]
 :WEEK:     1321
@@ -340,7 +340,7 @@ Bestest person. We resolved it few months down the line. It's peaceful now.
 :EXPORT_FILE_NAME: 1064
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1064 :cal_date  7 Jan'17
 :END:
-* first iPhone 🍎
+* first iPhone
 :PROPERTIES:
 :DATE: [2018-05-12]
 :WEEK:     1134
