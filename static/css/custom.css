@@ -18,3 +18,10 @@ ol li, ul li {
 .listing-item {
     font-size: 0.8em;
 }
+
+h1.listing-item{
+    margin: 0;
+}
+article.post {
+    margin-bottom: 0;
+}
