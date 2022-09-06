@@ -2,8 +2,8 @@
 #+hugo_section: weeks
 
 #+begin_src elisp :results none
-                                        ; if there are two entries which belong to the same week, that conflict needs manual check.
-                                        ; writing my bithdays in this document was the most spritual moment i ever had. i am crying rn. idk what is but i feel more whole than usual.
+; if there are two entries which belong to the same week, that conflict needs manual check.
+; writing my bithdays in this document was the most spritual moment i ever had. i am crying rn. idk what is but i feel more whole than usual.
 (defun get-week-no(d)
   (let* ((days (- (calendar-absolute-from-gregorian '(8 14 1996))
                   (calendar-absolute-from-gregorian d)))
@@ -229,6 +229,7 @@ I don't remember what happened.
 :EXPORT_FILE_NAME: 1356
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1356 :cal_date 14 Aug'22
 :END:
+It was pretty bad. I stayed that night at Joyraj's place.
 * First love
 :PROPERTIES:
 :DATE: [2012-12-12]
@@ -400,3 +401,11 @@ Quit my job.
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1332 :cal_date 23 Feb'22
 :END:
 Adopted my first dog. Choco aka nft aka bandor.
+* New side project
+:PROPERTIES:
+:DATE: [2022-09-01]
+:WEEK:     1359
+:EXPORT_FILE_NAME: 1359
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1359 :cal_date  1 Sep'22
+:END:
+We launched betterkeep landing page, working on few other project. This is a milestone because I left my job in march and this is the first time in a while I am doing any real 'work'
