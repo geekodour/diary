@@ -409,3 +409,12 @@ Adopted my first dog. Choco aka nft aka bandor.
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1359 :cal_date  1 Sep'22
 :END:
 We launched betterkeep landing page, working on few other project. This is a milestone because I left my job in march and this is the first time in a while I am doing any real 'work'
+
+* Released Calendar
+:PROPERTIES:
+:DATE: [2022-12-15]
+:WEEK:     1374
+:EXPORT_FILE_NAME: 1374
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week nil :cal_date 15 Dec'22
+:END:
+Launched the 365 Calendar to the public on shopify
