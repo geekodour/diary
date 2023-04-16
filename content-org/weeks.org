@@ -427,3 +427,12 @@ Launched the 365 Calendar to the public on shopify
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1379 :cal_date 20 Jan'23
 :END:
 Today I am re-organizing a lot of things. Thanks to my planing in the previous months, all of it was worth it. My life is truly organized now. I did not have to think much to decide what to do, everything is right there. I just have to do it. There's some financial stress going on, which I am handling like I should at the moment. This day decides rest of the year and probably rest of my life. It's time to get to work and work really hard. Practice and Patience.
+
+* Running late
+:PROPERTIES:
+:DATE: [2023-04-16]
+:WEEK:     1391
+:EXPORT_FILE_NAME: 1391
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :week 1391 :cal_date 16 Apr'23
+:END:
+I am feeling some pressure, I think I am running late.
