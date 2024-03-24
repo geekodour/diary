@@ -1,7 +1,9 @@
 #+hugo_base_dir: ../
 #+hugo_section: weeks
 
+
 #+begin_src elisp :results none
+; https://news.ycombinator.com/item?id=39478074
 ; if there are two entries which belong to the same week, that conflict needs manual check.
 ; writing my bithdays in this document was the most spritual moment i ever had. i am crying rn. idk what is but i feel more whole than usual.
 (defun get-week-no(d)
